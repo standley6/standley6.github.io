@@ -1,0 +1,112 @@
+/*5.13 Image Manipulation*/
+img.saturate-filter:hover{
+    filter:saturate(5);
+}
+body {
+    background-color: #AA7939;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+/*5.4 Divs*/
+.h1{
+    font-family: 'Source Serif Pro', serif;
+    color: brown;
+    font-weight:bold;
+} 
+/*5.6 Combining CSS Selectors (IDs)*/
+#header {
+    background-color: Purple;
+    color: Black;
+    text-align:center;
+}
+#odd-row {
+    background-color: lightblue ;
+}
+h3{
+    text-transform:uppercase;
+}
+/*5.3 iframe*/
+iframe{
+    height:600px;
+    width:100%
+}
+.header{
+    border-style:solid;
+    background-color:#B0E0E6;
+}
+/*5.7 Don't Repeat Yourself (margin and padding joining to main .content attribute), 5.12 Box Model (margin and padding) and 5.4 Divs*/
+.content{
+    background-color:#B0E0E6;
+    height:80%;
+    width:70%;
+    min-height:600px;
+    margin:50px;
+    padding:10px;
+}
+.footer{
+    background-color:#B0E0E6;
+    margin:50px;
+    padding:10px;
+/*5.5 Span*/
+}
+span{
+    font-weight:bold;
+    color:black;
+}
+/*5.6 Combining CSS Selectors and 5.8 Special Selectors*/
+.large-list{
+    font-weight:bold;
+    font-size:15px;
+}
+ol,ul{
+    font-weight:normal;
+    font-size:18px;
+}
+/*5.7 Don't Repeat Yourself (img:hover and .no-hover joining together)*/
+img, .no-hover{
+    width:200px;
+    height:200px;
+    border-color:black;
+    border-width:5px;
+    border-style:solid;
+    transition: width 1s, height 1s;
+}
+/*5.8 Special Selectors*/
+.engineer-level-list{
+    font-weight:bold;
+}
+/*5.9 Visisbility*/
+#msa:hover .caption{
+    visibility:visible;
+}
+.caption{
+   visibility: hidden;
+}
+/*5.12 Box Model*/
+.box-around{
+  border:2px dotted black;
+  width:500px;
+  margin:30px
+  padding: 20px;
+}
+/*5.14 Animation*/
+p {
+  font-family:Arial;
+  text-align:left;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.carousel{
+    width:640px; height:360px; 
+}
